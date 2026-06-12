@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+  ===================================================================
+  PORTFOLIO CASE-STUDY TEMPLATE
+  ===================================================================
+  HOW TO USE THIS FILE:
+
+  1. Find placeholders by searching (Ctrl/Cmd + F) for two square
+     brackets:  [[
+     Every spot you need to edit looks like:  [[ SOMETHING ]]
+     Replace the whole thing (brackets included) with your content.
+
+  2. To add an IMAGE: each grey dashed box is an image slot. Put your
+     image file in the /images folder, then follow the comment right
+     above the box — you just swap the <div> for an <img> tag.
+
+  3. Nav links, social links, and "More projects" links use href="#".
+     Replace the # with the real page or URL.
+
+  4. You can DELETE any <section> you don't need, or COPY one to add
+     more. Each content block is clearly labelled below.
+  ===================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- [[ PAGE TITLE — shows in the browser tab ]] -->
+  <title>[[ PROJECT NAME ]] — [[ YOUR NAME ]]</title>
+
+  <!-- [[ SEO DESCRIPTION — one sentence about this project ]] -->
+  <meta name="description" content="[[ SHORT PROJECT DESCRIPTION ]]" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav">
+    <div class="nav__inner">
+
+      <!-- [[ LOGO / YOUR NAME ]] -->
+      <a class="nav__logo" href="index.html">[[ YOUR NAME ]]</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__menu">
+        <!-- Replace href="#" with your real links. Rename labels freely. -->
+        <a href="#">Home</a>
+
+        <div class="nav__dropdown">
+          <button class="nav__dropbtn">Work</button>
+          <div class="nav__droplist">
+            <a href="#">[[ PROJECT 1 ]]</a>
+            <a href="#">[[ PROJECT 2 ]]</a>
+            <a href="#">[[ PROJECT 3 ]]</a>
+          </div>
+        </div>
+
+        <div class="nav__dropdown">
+          <button class="nav__dropbtn">More</button>
+          <div class="nav__droplist">
+            <a href="#">[[ LINK A ]]</a>
+            <a href="#">[[ LINK B ]]</a>
+            <a href="#">[[ LINK C ]]</a>
+          </div>
+        </div>
+
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <!-- HERO IMAGE: drop your file in /images, then replace the div below with:
+           <img class="hero__img" src="images/hero.png" alt="[[ describe the image ]]" /> -->
+      <div class="img-ph img-ph--hero">[[ IMAGE — hero / cover ]]</div>
+
+      <!-- [[ PROJECT TITLE ]] -->
+      <h1 class="hero__title">[[ PROJECT TITLE ]]</h1>
+    </section>
+
+    <!-- ===================== OVERVIEW + ROLE ===================== -->
+    <section class="grid2">
+      <div>
+        <h2 class="eyebrow">Overview</h2>
+        <!-- [[ OVERVIEW — 2 to 4 sentences on what the project was and the goal ]] -->
+        <p>[[ OVERVIEW PARAGRAPH ]]</p>
+      </div>
+      <div>
+        <h2 class="eyebrow">Role</h2>
+        <!-- [[ YOUR ROLE — e.g. Product Designer ]] -->
+        <p><strong>[[ YOUR ROLE ]]</strong></p>
+        <!-- [[ WHAT YOU DID — e.g. Research, UI, Prototyping ]] -->
+        <p>[[ RESPONSIBILITIES ]]</p>
+        <!-- [[ TIMEFRAME — e.g. Jan 2025 – Present ]] -->
+        <p>[[ DATES ]]</p>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         CONTENT BLOCKS
+         Each block = a heading + text, with an optional image slot.
+         Copy a whole <section> to add more. Delete any you don't need.
+    ====================================================================== -->
+
+    <!-- ---- Block 1 (text only) ---- -->
+    <section class="block">
+      <h2>[[ SECTION 1 HEADING ]]</h2>
+      <p>[[ SECTION 1 BODY TEXT ]]</p>
+    </section>
+
+    <!-- ---- Block 2 (text + image) ---- -->
+    <section class="block">
+      <h2>[[ SECTION 2 HEADING ]]</h2>
+      <p>[[ SECTION 2 BODY TEXT ]]</p>
+      <!-- IMAGE: replace the div below with:
+           <img class="block__img" src="images/section-2.png" alt="[[ describe ]]" /> -->
+      <div class="img-ph">[[ IMAGE — section 2 ]]</div>
+    </section>
+
+    <!-- ---- Block 3 (text + bullet list) ---- -->
+    <section class="block">
+      <h2>[[ SECTION 3 HEADING ]]</h2>
+      <p>[[ SECTION 3 INTRO TEXT ]]</p>
+      <ul>
+        <li>[[ POINT ONE ]]</li>
+        <li>[[ POINT TWO ]]</li>
+        <li>[[ POINT THREE ]]</li>
+      </ul>
+    </section>
+
+    <!-- ---- Block 4 (text + image) ---- -->
+    <section class="block">
+      <h2>[[ SECTION 4 HEADING ]]</h2>
+      <p>[[ SECTION 4 BODY TEXT ]]</p>
+      <!-- IMAGE: replace the div below with:
+           <img class="block__img" src="images/section-4.png" alt="[[ describe ]]" /> -->
+      <div class="img-ph">[[ IMAGE — section 4 ]]</div>
+    </section>
+
+    <!-- ---- Block 5 (text + two images side by side) ---- -->
+    <section class="block">
+      <h2>[[ SECTION 5 HEADING ]]</h2>
+      <p>[[ SECTION 5 BODY TEXT ]]</p>
+      <div class="img-row">
+        <!-- IMAGE: replace each div with <img class="block__img" src="images/..." alt="..."> -->
+        <div class="img-ph">[[ IMAGE — 5a ]]</div>
+        <div class="img-ph">[[ IMAGE — 5b ]]</div>
+      </div>
+    </section>
+
+    <!-- ---- Block 6 (results / takeaways) ---- -->
+    <section class="block">
+      <h2>[[ RESULTS &amp; TAKEAWAYS HEADING ]]</h2>
+      <p>[[ RESULTS PARAGRAPH ]]</p>
+      <ul>
+        <li><strong>[[ TAKEAWAY ONE — bold lead-in.]]</strong> [[ supporting sentence. ]]</li>
+        <li><strong>[[ TAKEAWAY TWO — bold lead-in.]]</strong> [[ supporting sentence. ]]</li>
+        <li><strong>[[ TAKEAWAY THREE — bold lead-in.]]</strong> [[ supporting sentence. ]]</li>
+      </ul>
+    </section>
+
+    <!-- ===================== MORE PROJECTS ===================== -->
+    <section class="more">
+      <h2>More projects</h2>
+      <div class="more__grid">
+        <!-- Each card links to another case-study page. Duplicate or remove. -->
+        <a class="more__card" href="#">
+          <!-- IMAGE: replace div with <img src="images/project-a.png" alt="..."> -->
+          <div class="img-ph img-ph--card">[[ IMAGE — project A ]]</div>
+          <span class="more__label">[[ PROJECT A NAME ]]</span>
+        </a>
+        <a class="more__card" href="#">
+          <div class="img-ph img-ph--card">[[ IMAGE — project B ]]</div>
+          <span class="more__label">[[ PROJECT B NAME ]]</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <h2 class="footer__title">Let's connect</h2>
+    <!-- [[ FOOTER TAGLINE ]] -->
+    <p class="footer__text">[[ GET IN TOUCH MESSAGE ]]</p>
+    <div class="footer__links">
+      <!-- Replace # with your real links / email -->
+      <a href="#">LinkedIn</a>
+      <a href="mailto:[[ YOUR EMAIL ]]">Email</a>
+      <a href="#">[[ OTHER LINK ]]</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
